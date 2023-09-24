@@ -16,19 +16,28 @@ body {
 
 .header {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased space under the header */
+    max-width: 500px;    /* Maximum width for the header text */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .content {
     flex: 1;
-    text-align: center;
     padding: 20px;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    text-align: left;
 }
 
 .line {
