@@ -11,12 +11,12 @@
         console.log("Current Domain:", currentDomain);
         console.log("Detected TimeZone:", timeZone);
 
-        if (timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.nl') {
+        if (timeZone.startsWith('Europe/') && currentDomain !== 'stellarwind.nl') {
             console.log("Redirecting to NL site");
-            window.location.href = 'https://StellarWind.nl';
-        } else if (!timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.us') {
+            window.location.href = 'https://stellarwind.nl';
+        } else if (!timeZone.startsWith('Europe/') && currentDomain !== 'stellarwind.us') {
             console.log("Redirecting to US site");
-            window.location.href = 'https://StellarWind.us';
+            window.location.href = 'https://stellarwind.us';
         } else {
             console.log("No redirection required");
         }
