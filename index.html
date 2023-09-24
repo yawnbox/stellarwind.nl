@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
+        const currentDomain = window.location.hostname;
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        if (timeZone.startsWith('Europe/')) {
+
+        if (timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.nl') {
             window.location.href = 'https://StellarWind.nl';
-        } else {
-            // Everyone else
+        } else if (!timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.us') {
             window.location.href = 'https://StellarWind.us';
         }
     </script>
