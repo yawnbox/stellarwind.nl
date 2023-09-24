@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Stellar Wind</title>
     <script>
         const currentDomain = window.location.hostname;
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -21,8 +22,19 @@
             console.log("No redirection required");
         }
     </script>
+
 </head>
 <body>
-    Redirecting...
+    <div class="container">
+        <div class="content left">
+            Stellar Wind LLC
+            <p>For consulting in North America, please contact <a href="mailto:c@stellarwind.us">c@stellarwind.us</a></p>
+        </div>
+        <div class="line"></div>
+        <div class="content right">
+            Stellar Wind BV
+            <p>For consulting in the European Union, please contact <a href="mailto:c@stellarwind.nl">c@stellarwind.nl</a></p>
+        </div>
+    </div>
 </body>
 </html>
