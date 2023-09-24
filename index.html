@@ -7,11 +7,18 @@
     <script>
         const currentDomain = window.location.hostname;
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        
+        console.log("Current Domain:", currentDomain);
+        console.log("Detected TimeZone:", timeZone);
 
         if (timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.nl') {
+            console.log("Redirecting to NL site");
             window.location.href = 'https://StellarWind.nl';
         } else if (!timeZone.startsWith('Europe/') && currentDomain !== 'StellarWind.us') {
+            console.log("Redirecting to US site");
             window.location.href = 'https://StellarWind.us';
+        } else {
+            console.log("No redirection required");
         }
     </script>
 </head>
