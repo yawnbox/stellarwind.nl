@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.line {
+    width: 2px;
+    height: 60%;
+    background-color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #555;
+}
