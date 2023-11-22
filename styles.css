@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-weight: normal;
     background-color: lightgray;
     margin: 0;
     padding: 0;
@@ -10,14 +11,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
 .header {
     font-size: 1.5em;
     margin-bottom: 40px; /* Increased space under the header */
-    max-width: 500px;    /* Maximum width for the header text */
+    max-width: 900px;    /* Maximum width for the header text */
     margin-left: auto;
     margin-right: auto;
 }
